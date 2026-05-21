@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Backrooms Escape</title>
+
+    <link rel="stylesheet" href="gamedesign.css">
+
+    <script async src="https://unpkg.com/es-module-shims@1.10.0/dist/es-module-shims.js"></script>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.166.1/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.166.1/examples/jsm/"
+            }
+        }
+    </script>
+</head>
+<body>
+
+<div id="menu">
+    <h1>THE BACKROOMS</h1>
+
+    <p>
+        WASD = Move<br>
+        Mouse = Look Around<br>
+        Shift = Sprint<br>
+        Space = Jump<br>
+        F = Flashlight<br>
+        E = Open Doors
+    </p>
+
+    <button id="startButton">ENTER</button>
+</div>
+
+<div id="hud">
+    <div id="objective">Find 3 Keys And Escape</div>
+    <div id="keys">Keys: 0 / 3</div>
+</div>
+
+<div id="message"></div>
+
+<script type="module" src="gamestuff.js"></script>
+
+</body>
+</html>
