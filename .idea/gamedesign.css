@@ -5,13 +5,9 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* GAME CANVAS */
-
 canvas {
     display: block;
 }
-
-/* MAIN MENU */
 
 #menu {
     position: absolute;
@@ -27,18 +23,16 @@ canvas {
     background:
             radial-gradient(
                     circle,
-                    rgba(40,40,20,0.55) 0%,
-                    rgba(0,0,0,0.96) 80%
+                    rgba(70,70,30,0.45) 0%,
+                    rgba(0,0,0,0.96) 85%
             );
 
     z-index: 10;
 
     color: white;
 
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(4px);
 }
-
-/* TITLE */
 
 #menu h1 {
 
@@ -51,11 +45,9 @@ canvas {
     color: #f0e68c;
 
     text-shadow:
-            0 0 10px rgba(255,255,150,0.4),
-            0 0 30px rgba(255,255,100,0.2);
+            0 0 15px rgba(255,255,150,0.5),
+            0 0 40px rgba(255,255,100,0.25);
 }
-
-/* SUBTEXT */
 
 #menu p {
 
@@ -67,10 +59,8 @@ canvas {
 
     color: #ddddcc;
 
-    opacity: 0.85;
+    opacity: 0.9;
 }
-
-/* START BUTTON */
 
 #startButton {
 
@@ -97,25 +87,15 @@ canvas {
     border-radius: 8px;
 
     transition: 0.2s ease;
-
-    box-shadow:
-            0 0 20px rgba(255,230,120,0.2);
 }
 
 #startButton:hover {
 
-    transform: scale(1.06);
+    transform: scale(1.05);
 
     box-shadow:
-            0 0 30px rgba(255,230,120,0.5);
+            0 0 25px rgba(255,230,120,0.5);
 }
-
-#startButton:active {
-
-    transform: scale(0.98);
-}
-
-/* HUD */
 
 #hud {
 
@@ -126,17 +106,18 @@ canvas {
 
     z-index: 5;
 
-    color: white;
-
     display: flex;
     flex-direction: column;
 
     gap: 10px;
+
+    color: white;
 }
 
-/* OBJECTIVE */
-
-#objective {
+#objective,
+#keys,
+#battery,
+#sanity {
 
     padding: 12px 18px;
 
@@ -148,37 +129,8 @@ canvas {
 
     font-size: 18px;
 
-    color: #f5f1c8;
-
     backdrop-filter: blur(4px);
-
-    box-shadow:
-            0 0 15px rgba(0,0,0,0.4);
 }
-
-/* KEYS */
-
-#keys {
-
-    padding: 12px 18px;
-
-    background: rgba(0,0,0,0.45);
-
-    border-left: 4px solid #d4af37;
-
-    border-radius: 6px;
-
-    font-size: 18px;
-
-    color: #ffe27a;
-
-    backdrop-filter: blur(4px);
-
-    box-shadow:
-            0 0 15px rgba(0,0,0,0.4);
-}
-
-/* MESSAGE */
 
 #message {
 
@@ -204,8 +156,6 @@ canvas {
             0 0 10px red,
             0 0 25px rgba(255,0,0,0.7);
 }
-
-/* CROSSHAIR */
 
 body::after {
 
