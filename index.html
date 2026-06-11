@@ -18,7 +18,25 @@
             }
         }
     </script>
+
+    <!-- THIS is what makes the page background actually work -->
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+
+            background-color: #06161c; /* dark aqua-blue */
+            overflow: hidden;
+        }
+
+        canvas {
+            display: block;
+        }
+    </style>
 </head>
+
 <body>
 
 <div id="menu">
@@ -30,7 +48,6 @@
         Shift = Sprint<br>
         Space = Jump<br>
         F = Flashlight<br>
-        E = Open Doors
     </p>
 
     <button id="startButton">ENTER</button>
@@ -39,8 +56,6 @@
 <div id="hud">
     <div id="objective">Find 3 Keys And Escape</div>
     <div id="keys">Keys: 0 / 3</div>
-    <div id="battery">Flashlight: 100%</div>
-    <div id="sanity">Sanity: 100%</div>
 </div>
 
 <div id="message"></div>
